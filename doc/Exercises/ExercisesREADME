@@ -1,0 +1,44 @@
+"Sometimes you hit the jackpot and sometimes the jackpot hits you"
+
+The four exercises.
+
+The first three exercises have notes about them. i've made a folder inside docs with the name "exercises"
+
+The forth exercise:
+
+Fork our DSW code and create a test coin:
+
+a: Brand it, name it, change all texts and logos like it would be a real coin for release on the market:
+
+I called it QuestionIV - QIV, made a logo (QIVlogo.png on docs) - set the public adress to "Q" Max coins: 100 Million mining rewards 100.
+i've changed the files "amount.cpp", "wallet.cpp", "bip38.cpp", "mastenode.cpp", "chainparams.cpp" "chainparamsbase.cpp"  and "bitcoinunits.cpp" with the coin info.
+Also included a genesis block file in the docs folder
+
+
+b: Choose the mining algorithm, rewards and collateral table, and explain your choices.
+i didnt changed the mining algorithm in the code but i would choose the scrypt algorithm because is the most simple, advanced and environment friendly, also because being the most advanced
+can ensure us a longer time service before becomes obsolete.
+the rewards are 100 coins and the collateral are 10 coins or 10%, got this numbers through some other cases i've studied.
+
+c: At last, setup some seeds (the minimal required to run the coin) and bootstrap the blockchain.
+i've made 4 seeds but couldnt bootstrap the blockchain:
+
+1º seed
+drastic chalk clog album wonder banner foster oyster arctic alley wife stick damage armed action web canal owner horse wrong bachelor cross basket topic
+QuestionIV
+FFGEFGZBUSUUZOBLSHUGLZTGQWWUMETDXCHXT9QTF9VXATX9KOJEMXSYWFNOEAJUSTPOZGFPGBBZRRNGM
+
+2º seed
+copy bean mandate web rely toilet truck process chat predict ship soldier mercy concert mesh such liquid squirrel valid man deny torch captain length
+Question3
+WCLGOHPOYWNABFDXWVNZSJJAV9VXBAIMPCHZDORI9ZCZDGDXERA9WXIRORDUHCOLBURJNSFPQXCARKWKA
+
+3º seed
+fine woman talent nephew release tower tone census glide warfare tongue puppy please rifle link evil million face october genius good impact spirit noble
+Question2
+SLJUVKAUUITXYILQSXG9VOLMZDLDHOOUKRGNPMWTGXXEYHVHDRKKKGJWCIOCUNTRSGTAETZXDPNJHEYG9
+
+4º seed
+flash leopard invest start copper wisdom evolve lawsuit knife canal insect clap divert security pluck cream main correct raven manage crush upon raw high
+Question1
+FAWOBNGEETPCOCUEPQZNQTASIECLSXILBIELFCBNOPMJ9XLKGLNSOEDSAHNODIMACGBIHVERLAVLIECEN
