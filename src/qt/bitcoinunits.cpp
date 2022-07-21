@@ -2,6 +2,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
+// Copyright (c) 2022 The Question IV developer
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -44,11 +45,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case PIV:
-        return QString("__DSW__");
+        return QString("QIV");
     case mPIV:
-        return QString("m__DSW__");
+        return QString("mQIV");
     case uPIV:
-        return QString::fromUtf8("u__DSW__");
+        return QString::fromUtf8("uQIV");
     default:
         return QString("???");
     }
@@ -90,20 +91,20 @@ QString BitcoinUnits::description(int unit)
         case PIV:
             return CURR_UNIT;
         case mPIV:
-            return QString("Milli-") + CURR_UNIT + QString(" (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-QuestionIV") + CURR_UNIT + QString(" (1 / 1" THIN_SP_UTF8 "000)");
         case uPIV:
-            return QString("Micro-") + CURR_UNIT + QString(" (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-QuestionIV") + CURR_UNIT + QString(" (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
         case PIV:
-            return QString("Test") + CURR_UNIT;
+            return QString("QuestionIV") + CURR_UNIT;
         case mPIV:
-            return QString("Milli-Test") + CURR_UNIT + QString(" (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-QuestionIV") + CURR_UNIT + QString(" (1 / 1" THIN_SP_UTF8 "000)");
         case uPIV:
-            return QString("Micro-Test") + CURR_UNIT + QString(" (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-QuestionIV") + CURR_UNIT + QString(" (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }

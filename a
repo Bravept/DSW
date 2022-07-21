@@ -1,0 +1,995 @@
+[33mcommit 986184507023dda847da7af1b4b0bf243d6302f5[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Fri Jun 24 14:03:03 2022 +0200
+
+    rename spork
+
+[33mcommit a4b5f4f8284efa03b03109a6049e994e9f0ed46e[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Fri Jun 24 14:00:02 2022 +0200
+
+    avoids deadlock
+
+[33mcommit 0fa77eeec47f27f3f4c5c174cfafbd67f45614ec[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Fri Jun 24 13:58:15 2022 +0200
+
+    changes CMasternode::IsInputAssociatedWithPubkey() to be more strict
+
+[33mcommit 984672754866f18c256fd3ef8531d214aad3e2d6[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Thu Jun 16 18:07:54 2022 +0200
+
+    add missing paidpayee
+
+[33mcommit 79dc5d8ebdbcfbe9bf4d0d3d2aa4bfa6583a96f7[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Thu Jun 16 17:21:49 2022 +0200
+
+    fix targetspacing
+
+[33mcommit 2b625d2b3be65a299cc52dab74e0ba551e3e1087[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Wed Jun 15 13:35:34 2022 +0200
+
+    change depends  links
+
+[33mcommit 2e93a2dac78036ea18a31e68f914653d884e5c90[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Tue Jun 7 09:09:03 2022 +0200
+
+    locking improvements
+
+[33mcommit f56394a86c6b26f01a008381009a256989323a00[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Fri Jun 3 15:57:17 2022 +0200
+
+    last backport commit
+
+[33mcommit a949b7631e291fd79c7abb462c9b4a79c661eb87[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Thu Jun 2 16:41:59 2022 +0200
+
+    speed up mn sync
+
+[33mcommit 3e9f3dd84f03ea41e0a9d5a376f030e15fce2be7[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Thu Jun 2 16:37:37 2022 +0200
+
+    locking improvements
+
+[33mcommit 1e4aa2e38947b71b49434d5969808423605266ad[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Thu Jun 2 16:24:24 2022 +0200
+
+    add spork 113
+
+[33mcommit cc6fcb965488c2b055cf94f653a2004021dc3347[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Thu Jun 2 16:19:00 2022 +0200
+
+    adds mapping between the vMasternodes elements -2
+
+[33mcommit 542abe149d4b9bce251afc77c5300891d268fe34[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Thu Jun 2 15:36:32 2022 +0200
+
+    prepare the vMasternodes vector for indexing
+
+[33mcommit d036529905132a044fe7b4202c6d35002b0d69e5[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Wed Jun 1 18:22:49 2022 +0200
+
+    getmnrank improvements
+
+[33mcommit d9aca0bf28bdf5efd8d2779927069a700ccf19ec[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Wed Jun 1 15:44:52 2022 +0200
+
+    adds LOCK(cs) to all iterations on vMasternodes
+
+[33mcommit febac303bc8f2ebe9c135bbad60587eec78834fe[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Wed Jun 1 15:32:12 2022 +0200
+
+    add burn address total and locks
+
+[33mcommit 38eb937f459cb81fdb001d8c492002e70476adc5[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Wed Jun 1 10:57:08 2022 +0200
+
+    rename sporks
+
+[33mcommit bc61d817d8454c3298dc97e6e11b773952d700e6[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Wed Jun 1 10:34:16 2022 +0200
+
+    additional dashd backports
+
+[33mcommit 41293e193da84de6ffa7b777e12af58e8ee55d7e[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Tue May 31 20:04:49 2022 +0200
+
+    implements SPORK_112_MASTERNODE_LAST_PAID_V2
+
+[33mcommit 093b2ca5d78ff3aebeec638915d4ca894917c985[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Tue May 31 15:22:49 2022 +0200
+
+    port dashd code to develop pt.2
+
+[33mcommit 8d73db9eebc41a0a7958139b421d6b6fc6dd6378[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Tue May 31 14:26:13 2022 +0200
+
+    adds windowed collateral support
+
+[33mcommit a67ff394a2a234ca3f7c429bd89cef72ddca6567[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Tue May 31 13:53:11 2022 +0200
+
+    add new sporks + implementation of spork  114
+
+[33mcommit 7c73b9fbd3b19587a34560e10e1ef7747fd01229[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Tue May 24 21:00:38 2022 +0100
+
+    improves the GA code and adds the CreateNewSeed function
+
+[33mcommit 9f696d7e089ea618403779825229c5725a967ad6[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Tue May 24 00:30:25 2022 +0200
+
+    bind to 0.0.0.0 instead of remote ip
+
+[33mcommit e1646732d9f1f65887602b49ce17f7491a0d01b5[m
+Merge: 8f90c7455 bf45a40f7
+Author: decenomy <74193190+decenomy@users.noreply.github.com>
+Date:   Wed May 11 15:37:14 2022 +0100
+
+    Merge pull request #43 from techy2/develop
+    
+    drop duplicate connections from the same IP
+
+[33mcommit bf45a40f7e6445b6a7195acf132b804150151cb8[m
+Author: techy2 <dguy66@zoho.com>
+Date:   Wed May 4 13:57:06 2022 -0700
+
+    drop duplicate connections from the same IP
+
+[33mcommit 8f90c74554aa2fcbfffb398a41aa78bfb6fd9a9e[m
+Author: Peteracn96 <pacn96@gmail.com>
+Date:   Wed Apr 27 19:05:00 2022 +0200
+
+    Adds Flits to gitignore
+
+[33mcommit b1ce43a4241ce5d615e8a6b1b3511fe78eac9c09[m[33m ([m[1;31morigin/MODIC[m[33m)[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Apr 11 23:55:13 2022 +0100
+
+    limits the collateral transaction to be only made when the collateral already switched minus the required confirmations
+
+[33mcommit d38f925cdb3b3f4861f48b193282b2c83fd07c98[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sat Mar 26 17:37:34 2022 +0000
+
+    improves readability of the chart labels
+
+[33mcommit 2b813a464995d86cd07aba8697d5ce7e785ece7b[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Mar 24 23:00:56 2022 +0000
+
+    do not skip collaterals from staking
+
+[33mcommit 77c544ba0a2850b5bb99369a18ab95e5a3db17c1[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Thu Mar 24 22:05:45 2022 +0000
+
+    removes budget features and dead code
+
+[33mcommit aa60bd243b3194e5d4bd263751654d8d9c16f59e[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Wed Mar 23 23:50:32 2022 +0000
+
+    removes zerocoin features and dead code
+
+[33mcommit 38c3806db5bc54d0a02dfcec1182f24605daa437[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Mar 21 20:14:40 2022 +0000
+
+    adds support for the activemasternode.conf file and multiple instances on the same daemon
+
+[33mcommit 1d8af44366bdfee0047f8f5a656c4f64c9cf5f0a[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Mar 20 20:30:54 2022 +0000
+
+    adds the SPORK_107_ALLOW_DUPLICATE_MN_IPS to allow the same IP address for multiple masternode instances
+
+[33mcommit 9cf9aa37a5b097ef0dcc8cfb3361720e7556e465[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Mar 20 20:11:00 2022 +0000
+
+    changes the depends folder from downloading packages from external websites to download all the packages from IPFS instead
+
+[33mcommit abc4656631693ad9c9e6f770a32d6b347b623f39[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Fri Jan 14 13:43:31 2022 +0000
+
+    minor copyright change
+
+[33mcommit 2b0c634b5a2b5c158028895b178d6834f33e9d79[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Fri Jan 14 13:03:40 2022 +0000
+
+    remove timedata warning
+
+[33mcommit ab9b036eaf2aa1c0a37834cba7c9293a2074264b[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Fri Jan 14 04:29:11 2022 +0000
+
+    updates copyright notices
+
+[33mcommit 15eef7a937d1d164355f0c931a34dc4319aa3fb4[m
+Merge: 53c2eef10 957551287
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Fri Jan 14 03:51:26 2022 +0000
+
+    Merge branch 'develop' of https://github.com/decenomy/DSW into develop
+
+[33mcommit 53c2eef10964f8390282c65cd91d355838b42b36[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Fri Jan 14 03:51:24 2022 +0000
+
+    do not lock the UI when the peers are a little offset
+
+[33mcommit 957551287ff1abc9aa6a4e88b850da368c56e0c0[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Thu Jan 13 15:37:10 2022 +0100
+
+    removing unused bitcoin ppa
+
+[33mcommit 2f080155f6a01234a6868fbfa7838ec278709995[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Wed Jan 12 16:03:59 2022 +0000
+
+    increases network connectivity
+
+[33mcommit bbb7436548b02982d8cf1e76625f5f689d3052d2[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Wed Jan 12 16:00:22 2022 +0000
+
+    excludes the ':' character from the user agent when comparing both
+
+[33mcommit d9a7efae9f24c3fbf606894da26e1e30dc974cb4[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Wed Jan 12 15:04:38 2022 +0100
+
+    standard maxmoneyout
+
+[33mcommit 33b0f20c34b00f371838a6070d08f5594c8aacd7[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Mon Jan 10 15:14:35 2022 +0100
+
+    cleaning apt packages and add net-tools
+
+[33mcommit 1ef0cc4e5797253018c87176a903140d6c5a8312[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Sun Dec 5 20:23:13 2021 +0100
+
+    fix mn script
+
+[33mcommit 0be3fd0c18b9eb91fc5185d4aa17067013030acf[m[33m ([m[1;31morigin/QTZ-develop[m[33m)[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Nov 25 19:27:42 2021 +0000
+
+    adjusts the staking algorithm for a smooth transition between old PIVX versions and DSW
+
+[33mcommit ca0f2139027bae08f868a4d5db5ffce897e6e3dc[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Nov 25 16:59:07 2021 +0000
+
+    removes transactionType and transactionSort from settings
+
+[33mcommit 78f6907a250361be768114c949901360e7b22f6c[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Tue Nov 23 17:49:28 2021 +0000
+
+    fix typo
+
+[33mcommit 9f1ce9a373dd25363961cf9dab48129d0e3fd5be[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Nov 22 19:45:52 2021 +0000
+
+    removes nMasternodeCountDrift
+
+[33mcommit ae00a6bc6f93f68c7238ca290ccc01a3ac3144bb[m
+Author: stepollo <stefano.manzi88@gmailcom>
+Date:   Fri Nov 19 16:09:40 2021 +0100
+
+    add warning dialog for dump* commands
+
+[33mcommit 72fdc97cf8841f39c302f92e4ae2d5894ff9d509[m
+Author: stepollo <stefano.manzi88@gmailcom>
+Date:   Fri Nov 19 15:10:33 2021 +0100
+
+    add help message for getburnaddresses call
+
+[33mcommit a57cd1ec9fe29fa65d10968a97abe9e0dd5eceff[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Thu Nov 18 17:05:28 2021 +0000
+
+    small getburnaddresses changes
+
+[33mcommit 8e47eab96ad80c52d460e9c90d6127a261a14734[m
+Author: stepollo <stefano.manzi88@gmailcom>
+Date:   Thu Nov 18 17:02:39 2021 +0100
+
+    GetBurnStats
+
+[33mcommit f6faff3210a520e2a49cf56fce52f15dd8fb437f[m
+Author: stepollo <stefano.manzi88@gmailcom>
+Date:   Tue Nov 16 11:56:37 2021 +0100
+
+    fix json syntax
+
+[33mcommit fff889596c2a17e6f9602ec6e494ca18bd5dbc0d[m
+Author: stepollo <stefano.manzi88@gmailcom>
+Date:   Mon Nov 15 16:14:26 2021 +0100
+
+    add support for getburnaddresses rpc call
+
+[33mcommit e2f67ded853c9458f1c8874a4588c05b19f6fec7[m
+Author: root <root@_hostname_.contaboserver.net>
+Date:   Sun Nov 14 19:40:04 2021 +0100
+
+    add warning for dumpwallet rpc command
+
+[33mcommit 3fcfbb330066dc6ff301b0fdd1f524d4b6d4bafa[m
+Merge: 93caff970 1965c8f8b
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Sun Nov 14 18:51:09 2021 +0100
+
+    Merge branch 'develop' of https://github.com/decenomy/DSW into develop
+
+[33mcommit 93caff970218540a9d078582173dfa9a7eca1c4f[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Sun Nov 14 18:02:59 2021 +0100
+
+    autocomplete for help commands
+
+[33mcommit 1965c8f8b47767c0539bb608bed76e3231fe857a[m
+Author: decenomy <74193190+decenomy@users.noreply.github.com>
+Date:   Sat Nov 13 00:43:02 2021 +0000
+
+    minor fix
+
+[33mcommit d01e913f5f0750fccd329609ce63bdf2dc6e4995[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sat Nov 13 00:07:24 2021 +0000
+
+    advances the cursor when the gettxousetinfo finds a burn address
+
+[33mcommit 1800610d0ec687d7733994f9e1f0ce96d8b6dc9c[m
+Merge: b3f085166 bd2f5878a
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Fri Nov 12 16:30:46 2021 +0000
+
+    Merge branch 'develop' of https://github.com/decenomy/DSW into develop
+
+[33mcommit b3f085166599dfe893237308a556d64b16f1b5e5[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Fri Nov 12 16:30:43 2021 +0000
+
+    adds burn address support
+
+[33mcommit bd2f5878a0414748e406d2d01e7aea776be3a35e[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Fri Nov 12 16:13:27 2021 +0100
+
+    fix font size in receive tab
+
+[33mcommit 689017961425c6a97aa8d41b928a1a55a2c96116[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Fri Nov 5 11:09:15 2021 +0000
+
+    only disconnects if the first connection eviction fails
+
+[33mcommit 7ccf1892734b1596de9ed35feb8b2cd3140aadc8[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Thu Nov 4 19:32:53 2021 +0000
+
+    evicts 10% of the inbound connections when the number of connections reaches the limit.
+
+[33mcommit 595d4bec54af954c10104beb864de199e1e91b28[m
+Merge: 2b85ed556 6c15d4ad5
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Wed Nov 3 16:52:29 2021 +0000
+
+    Merge branch 'develop' of https://github.com/decenomy/DSW into develop
+
+[33mcommit 2b85ed55631a846f12793d2794890968b9274203[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Wed Nov 3 16:52:26 2021 +0000
+
+    do not fully stop the UI in a temporarily time drift
+
+[33mcommit 6c15d4ad52ac233717a61340db3a64c2f98f4d7d[m
+Author: decenomy <74193190+decenomy@users.noreply.github.com>
+Date:   Sat Oct 30 20:41:55 2021 +0100
+
+    Update README.md
+
+[33mcommit e670a4490560ac56f50cc138e1a21988af1f9905[m
+Author: decenomy <74193190+decenomy@users.noreply.github.com>
+Date:   Sat Oct 30 19:39:42 2021 +0100
+
+    Update README.md
+
+[33mcommit e69939a3486a0bf59cfeb93253261282790514fb[m
+Author: Peteracn96 <pacn96@gmail.com>
+Date:   Tue Oct 26 16:22:47 2021 +0200
+
+    Add Mobility Coin to gitignore
+
+[33mcommit 7d831079f0621cb23b1aaf790438802f8928ed4b[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Tue Oct 12 21:40:21 2021 +0100
+
+    minor fix
+
+[33mcommit a3905a08dec2ab3b8ffceaf0acdbeb6edb92d4c7[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Tue Oct 12 12:01:56 2021 +0100
+
+    updates COPYRIGHT_YEAR to 2021
+
+[33mcommit 5c92021123dfc25d70e08162ba3c423afa238141[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Tue Oct 12 12:01:05 2021 +0100
+
+    updates QT library to version 5.9.9
+
+[33mcommit 238f7ad06f0a8f59e4b965d4989b9db58ea8e891[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Tue Oct 12 12:00:31 2021 +0100
+
+    updates boost library to version 1.71
+
+[33mcommit b8e2218797d93acdd3079d0f32408e5689d8e9f9[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Fri Oct 8 17:37:59 2021 +0100
+
+    adds improvements to masternode dns seeding
+
+[33mcommit d3068e90588276cbbd9401ec7e9b85454fd518e8[m
+Author: pedro-at-decenomy <sapphire_pt@sappcoin.com>
+Date:   Thu Oct 7 11:43:12 2021 +0100
+
+    uses the masternode network as a source of seed server connections
+
+[33mcommit 2206d35e493692f5eaf816ca6307eeede3d84b44[m
+Author: decenomy <74193190+decenomy@users.noreply.github.com>
+Date:   Sat Oct 2 18:10:36 2021 +0100
+
+    Update masternodesetup.sh
+    
+    adds the net-tools package
+
+[33mcommit 6330cdc11b859b64b408a1b33824873f6924db4b[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Sep 30 02:50:57 2021 +0100
+
+    integrate the PIVX fix https://github.com/PIVX-Project/PIVX/commit/2f98acff2f840c5f3f4bd649acff648cf7a281de
+
+[33mcommit e8520a9df77ac01f05cd75c67db8ff9a67f44ab0[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Tue Sep 28 14:55:32 2021 +0100
+
+    staking improvements
+
+[33mcommit 371c0b0bb9fe66832eba6f619f15b818960a13fe[m
+Merge: 0747c880a 48cefefe6
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Sep 27 13:34:50 2021 +0100
+
+    Merge branch 'develop' of https://github.com/decenomy/DSW into develop
+
+[33mcommit 0747c880a776b45ada98edfa87a7933e1d00cfc6[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Sep 27 13:34:24 2021 +0100
+
+    adds azzure binaries to gitignore
+
+[33mcommit 48cefefe6f791265ed8d5f894d2ea6dff23b023d[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Sun Sep 26 11:55:00 2021 +0200
+
+    fix typo
+
+[33mcommit d447bdd74c0190d704559ad30b7aadf63840d659[m
+Merge: 83f0c5847 5f77cddcb
+Author: perseu <jmsaguas@gmail.com>
+Date:   Wed Sep 22 17:03:40 2021 +0200
+
+    Added birake's binary names to gitignore.
+
+[33mcommit 83f0c58479e555b6af8a42fa326de3cd2f075f3a[m
+Author: perseu <jmsaguas@gmail.com>
+Date:   Wed Sep 22 17:01:51 2021 +0200
+
+    Added birake binaries to gitignore.
+
+[33mcommit 5f77cddcb73df586b98032ded4675228440dd2dc[m
+Author: Peteracn96 <pacn96@gmail.com>
+Date:   Wed Sep 22 15:46:57 2021 +0200
+
+    Update gitignore to ignore Peps binaries
+
+[33mcommit 01faffd4584984b20334227858875b2a7ac9f81c[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Sep 1 21:45:56 2021 +0100
+
+    DEIP0001 very first draft proposal
+
+[33mcommit 729db3d0629dd681f55e7c085696c3f370d387b5[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Sep 1 19:59:09 2021 +0100
+
+    small typo
+
+[33mcommit b34b2316e0e68321f347b8d566f1195e0b0a799e[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Sep 1 19:56:58 2021 +0100
+
+    renames DEIP folder to DEIPs
+
+[33mcommit d41d6751d7ab63b23ae85fdc34f59ad1ad2e8243[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Sep 1 19:56:06 2021 +0100
+
+    adds DEIP explanation and rules
+
+[33mcommit 68800997b70a1cb49fef9e403c6d23dc78d4c306[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Sep 1 19:21:38 2021 +0100
+
+    adds DEIP template document
+
+[33mcommit 6deb818820f2cdd8589afab56bc1580ae4083a3a[m
+Author: stepollo2 <sbrasoinfinito@gmail.com>
+Date:   Sun Aug 29 17:34:51 2021 +0200
+
+    fix intro UI css
+
+[33mcommit f21bdbdac4cbfaf27b2432a005ca432523c0bb57[m
+Author: Bedri Özgür Güler <bedriguler@gmail.com>
+Date:   Tue Aug 10 02:45:44 2021 +0200
+
+    Minor fix
+
+[33mcommit 197f80e7462e4f74b58fa37a1f392e68a915c683[m
+Author: Bedri Özgür Güler <bedriguler@gmail.com>
+Date:   Tue Aug 10 02:36:26 2021 +0200
+
+    Minor fix
+
+[33mcommit cc2da0026236e21aff9625f4e67df26e1f042434[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Aug 8 13:53:51 2021 +0100
+
+    implements GoogleAuthenticator::GeneratePin
+
+[33mcommit 6012f35d34bdf9990906f20abbe169fb7a6a758d[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Aug 8 12:27:20 2021 +0100
+
+    adds google authenticator empty class
+
+[33mcommit 08cf396807e43e1d52e906a2c9127c639fa5a586[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Aug 8 12:15:42 2021 +0100
+
+    adds CHMAC_SHA1
+
+[33mcommit 92f6728232bd507f37b425f0c901e34210e26059[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Aug 2 03:42:03 2021 +0100
+
+    uses the hash already registered on the key index instead of recomputing the hash of every block, some algorithm are very expensive, like Scrypt, and X11KVS
+
+[33mcommit 17ca1d7d2cbde148855ee2e683b120f9fe6405b3[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Aug 2 03:10:12 2021 +0100
+
+    Throw immediately if RPC is used when the server is in warmup
+
+[33mcommit 1486d59609a478b91b76c02c5639aa919f025444[m
+Author: Bedri Özgür Güler <bedriguler@gmail.com>
+Date:   Sat Jul 31 03:56:23 2021 +0200
+
+    Fixes wrong colors on the base coloring
+
+[33mcommit 4aa84b524bb17b17d9314aed9d4d5e63571cd67d[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Fri Jul 30 14:59:29 2021 +0100
+
+    fixes the dashboard chart appearing when the wallet doesn't have transactions
+
+[33mcommit ab85f7f200a7c83b07a3c1b19c2dc3eeed3ec380[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 29 12:32:42 2021 +0100
+
+    adds Core to the client name
+
+[33mcommit 185eb39d0e638a7fc1cf07ed6097a0ca714dcbe6[m
+Merge: 23133389c b633c039a
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 29 03:02:49 2021 +0100
+
+    Merge branch 'develop' of https://github.com/decenomy/DSW into develop
+
+[33mcommit 23133389c3d277129f26f73dce2d68ed1c2e81d8[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 29 03:02:36 2021 +0100
+
+    compares the client name by its first word, without symbols, and in a case insensitive way
+
+[33mcommit b633c039afd048ad45ea81cbd106d87bff896f04[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Tue Jul 27 14:36:06 2021 +0200
+
+    Fix white font color on light style
+
+[33mcommit 73a1787bbb0685e66e0e2a8b44275a435f0cdf56[m
+Author: Peteracn96 <pacn96@gmail.com>
+Date:   Mon Jul 26 15:51:16 2021 +0200
+
+    Updates gitignore for One World Coin
+
+[33mcommit 23dc965c694b72aa2adcf560f76fbfab5c8d930d[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Jul 26 10:14:34 2021 +0100
+
+    avoids duplicate transactions in the transaction list also when the wallet has a large number of transactions
+
+[33mcommit fa48b451d9ec5e7f6558df251bd1c46f0818f80f[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Jul 26 10:06:25 2021 +0100
+
+    avoids an UI crash (segmentation fault) on the wallet loading when the wallet has a large number of transactions
+
+[33mcommit 29b9837a3e05c27bcc28c454f893adb1bd0cee52[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Jul 26 09:59:21 2021 +0100
+
+    adds a lock the wallet object when trying to topup the Ecommerce key pool
+
+[33mcommit 5a6c18f831bad99cce2d8d8eaaafb75adeb4605d[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Jul 26 09:58:34 2021 +0100
+
+    avoids a wallet crash when a keypool is empty
+
+[33mcommit 3c3600d3067adee2a6292aca06742d73b0cddc9d[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Tue Jul 20 22:07:57 2021 +0200
+
+    fix
+
+[33mcommit 56343ebf78d90cb1a615433641b1556accdbc041[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Jul 18 16:37:04 2021 +0100
+
+    reorganize sporks
+
+[33mcommit 86dc3474f061f2099788c8536f662db7e8347ac4[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sat Jul 17 13:40:04 2021 +0100
+
+    removes the more tightenmn message time verification
+
+[33mcommit cf4e278ca595efd9085f5a661a7443b9c40140e2[m
+Author: Bedri Özgür Güler <bedriguler@gmail.com>
+Date:   Sat Jul 17 05:05:00 2021 +0200
+
+    Updates gitignore for Ultraclear
+
+[33mcommit ac99e308518c967aeb571376f0fd0979ae48bad3[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 15 22:35:28 2021 +0100
+
+    don't ban peers just by asking twice for data on sync, just ignore
+
+[33mcommit b8afd47a49bb477d45453a81dd1d143df16dd0ce[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 15 19:40:01 2021 +0100
+
+    fixes Jenkinsfile
+
+[33mcommit 890f4488a7705904570c490343c88ef24096f6e0[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 15 16:21:29 2021 +0100
+
+    do not redownload the Mac SDK
+
+[33mcommit f301d995123246e3a533cf22aab6cb42ee318392[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 15 16:16:55 2021 +0100
+
+    fixes issue on Jenkins
+
+[33mcommit 6188e20f84abe463dc2f3f0b9bccfccb2387071e[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 15 16:08:51 2021 +0100
+
+    small change
+
+[33mcommit 21e5c175858998110323e3d34b3a87cb62583d04[m
+Merge: df8767bd3 e06a19221
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 15 16:02:48 2021 +0100
+
+    Merge branch 'develop' of https://github.com/decenomy/DSW into develop
+
+[33mcommit df8767bd363e454c1db3b5945e2cbb8a516f6170[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Thu Jul 15 16:02:26 2021 +0100
+
+    updates Jenkinsfile to get the version number from the linux cli
+
+[33mcommit e06a1922108c1d089ccac5d9749c7efb5192d46d[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Thu Jul 15 12:20:03 2021 +0200
+
+    fetch latest binary from github
+
+[33mcommit 735b2e6db86173169a8cb9a014f93de478305a3a[m
+Author: stepollo2 <56636447+stepollo2@users.noreply.github.com>
+Date:   Thu Jul 15 11:06:09 2021 +0200
+
+    fix typo
+
+[33mcommit b378ea6fd6e9ade5992ba619fb67c41443968aaa[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Jul 14 15:01:16 2021 +0100
+
+    gets the application version automatically by reading it from the application executable
+
+[33mcommit a464142605253be5dc5fb3c1613feaccc7d24b46[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Jul 14 13:16:51 2021 +0100
+
+    fix typo
+
+[33mcommit 255fdae57606b36bd06ea0a45b51b4bee53ce033[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Jul 14 13:16:19 2021 +0100
+
+    minor change
+
+[33mcommit c15b341abfdac749679bc50eb335f6b0aabddc4c[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Jul 14 13:11:52 2021 +0100
+
+    loosen up the masternode timeouts on sync
+
+[33mcommit bdb0426f2792c10145e1f3eaa63f055d7c60fcde[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Tue Jul 13 14:01:17 2021 +0100
+
+    adds eskacoin binaries to the .gitignore file
+
+[33mcommit 6c0ef539f4ede923894eeeb4fa68a5a643f2d543[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Jul 12 18:17:48 2021 +0100
+
+    remove excessive log
+
+[33mcommit 4de147eb9dc6b3e524887ec2e120a8ad983a8ab0[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Fri Jul 9 17:29:43 2021 +0100
+
+    skips transaction checks for blocks older than the last checkpoint
+
+[33mcommit d658038008c9ad441de2534bf73401e5c00dc9eb[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Fri Jul 9 17:25:27 2021 +0100
+
+    skips proof of stake checks for blocks older than the last checkpoint
+
+[33mcommit d7e00e355d99184bbb2f98c0d796e149ce33c48e[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Fri Jul 9 17:24:30 2021 +0100
+
+    skips block signatures for blocks older than the last checkpoint
+
+[33mcommit bfa6e6901004820c57021759f7f3dcd75b9386bc[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Fri Jul 9 13:43:47 2021 +0100
+
+    adds UPGRADE_MASTERNODE_RANK_V2
+
+[33mcommit eb5b2072d71ec827a31d55e11b6dcfc34fc99df5[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Wed Jul 7 14:54:36 2021 +0100
+
+    replaces bg-splash image
+
+[33mcommit ee24a4850b942e931c83d3328fb54d88031c0455[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Jul 5 23:14:10 2021 +0100
+
+    changes the QR code
+
+[33mcommit 7fffb7a7f8889e35a1c8d39e0a676f2529f10b4c[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Jul 5 22:41:17 2021 +0100
+
+    removes about1.png
+
+[33mcommit c9a96ddf677099a789a9930f02914808a43a7587[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Mon Jul 5 19:27:30 2021 +0100
+
+    sets the correct size for the total amount field on the top bar
+
+[33mcommit e2a065011facb43f42db9c6458afaaf38107cfe9[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Jul 4 21:24:13 2021 +0100
+
+    minor update
+
+[33mcommit 9149ffd77fa88a9ff1e6c42d625c7067bc60eb45[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Jul 4 21:06:55 2021 +0100
+
+    updates the overlay image of the welcome screen step 2
+
+[33mcommit 305f99f966454cdd1dcfaa0f22e2a849f3b39151[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Jul 4 20:25:40 2021 +0100
+
+    updates empty images
+
+[33mcommit 778079fb60d0336c9e5c3e651acaf1c3b38bf0fe[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Jul 4 20:09:50 2021 +0100
+
+    changes empty icon images
+
+[33mcommit 3ccb6bb01137046729887773c63c6cb12d3db57f[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Jul 4 19:53:43 2021 +0100
+
+    changes the image for empty multisend
+
+[33mcommit 75dbad9a55d67fe48494b11efdaa54bf64687523[m
+Merge: 7380fc3f9 a9d78cc7d
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sun Jul 4 15:53:02 2021 +0100
+
+    Merge branch 'DSW-develop-Standardized_Wallet_UI' of https://github.com/decenomy/DSW into develop
+
+[33mcommit 7380fc3f90988c92d4e7b147c4ec365c55aab32f[m
+Author: Bedri Özgür Güler <bedriguler@gmail.com>
+Date:   Sat Jul 3 02:53:02 2021 +0200
+
+    Updates README.md
+
+[33mcommit 7779846f1fbf2d5a8f67f2c3ac9001c4c94a6262[m
+Author: Bedri Özgür Güler <bedriguler@gmail.com>
+Date:   Sat Jul 3 02:45:49 2021 +0200
+
+    Updates README.md
+
+[33mcommit ace5a35809e16986082cfd1dce284a3e7257904a[m
+Author: Bedri Özgür Güler <bedriguler@gmail.com>
+Date:   Fri Jul 2 23:11:47 2021 +0200
+
+    Updates gitignore about typo
+
+[33mcommit 7e2cc650cbf281b3e6874f6ad64eeb148af720dc[m
+Author: Bedri Özgür Güler <bedriguler@gmail.com>
+Date:   Fri Jul 2 23:05:37 2021 +0200
+
+    Updates gitignore for Kyanite
+
+[33mcommit a72125d212ad767b220e001b00cd220b713280e5[m
+Author: Peteracn96 <pacn96@gmail.com>
+Date:   Mon Jun 14 15:25:51 2021 +0200
+
+    Update gitignore (adds Suvereno)
+
+[33mcommit cf6edfc6f92ca4f87fd6c5f1477c6432252b8522[m[33m ([m[1;31morigin/DSW-section-7[m[33m)[m
+Merge: c73754fd3 c146042a6
+Author: bedri <bedriguler@gmail.com>
+Date:   Wed Jun 9 00:21:59 2021 +0300
+
+    Merge pull request #31 from decenomy/DSW-develop-Add_IP_Lookup_Retry_MN_Install_Script
+    
+    [DSW] MN install script - add retry to IP lookup
+
+[33mcommit c146042a61f5a1d3807f9289dfe4cc96aa796c90[m
+Author: LotCooler <don.knudsen@gmail.com>
+Date:   Tue Jun 8 14:10:31 2021 -0700
+
+    add retry to IP lookup in masternode install script
+    
+    Sometimes  icanhazip.com times out and causes coinname.conf file have blanks for IP address. The script ignores this and continues and then the daemon will not start correctly and user has no idea what went wrong.
+    
+    This commit will add a retry (3 times) to the IP lookup.  If the IP is still unknown, then the script will exit out and inform user to try again in a couple minutes. If it continues they should ask for assistance in discord.
+    
+    Also removed a coin name branding replacement (coinname-cli) that wasn't needed to be done by developer and changed it to use a script constant instead.
+
+[33mcommit c73754fd367944ca7966ebf410a517eb2afba45d[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Tue Jun 8 13:39:15 2021 +0100
+
+    updates README
+
+[33mcommit e6ff0be613115492a40a31891039456c27351583[m
+Merge: 274ae279d 3d4cf6a51
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Tue Jun 8 13:03:12 2021 +0100
+
+    Merge branch 'develop' of https://github.com/decenomy/DSW into develop
+
+[33mcommit 274ae279d02dcfaf23072cbc95b73c8dbfd62193[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Tue Jun 8 13:02:39 2021 +0100
+
+    standardizes the collateral value on the masternode setup guide
+
+[33mcommit a9d78cc7db8fef61147508a4701bbb4afde77646[m
+Author: LotCooler <don.knudsen@gmail.com>
+Date:   Mon Jun 7 15:22:55 2021 -0700
+
+    bring wallet design to 'standard' ready for brand color replacement
+    
+    Bring wallet design to new 'standard' DSW design ready for brand color/icon replacement. This is the "standard" DSW branding (colors/icons) design as of 4/29/21.
+    
+    Brand color/image replacement steps.
+    
+    1) Replace colors in all code (.css, .svg, .ui, any files containing these color strings) (I go here to convert colors between rgb and hex  https://www.hexcolortool.com/ )
+    standard button color #c226d6
+    darker button color:  #810890
+    darker button color with 70% opacity: rgba(129, 8, 144, 0.7)
+    
+    dark tinted background color:  #4b1452
+    
+    staking chart POS: #dd8b14
+    staking chart POS as RGB: QColor(221,139,20)
+    staking chart MN:  #c06416
+    staking chart MN as RGB: QColor(192,100,22)
+    
+    dark theme background color: #211f1f
+    
+    2) Replace images with coin logo version (these are the minimum, but others can be preplaced if wanted)
+    src/qt/pivx/res/img/bg-splash.png
+    src/qt/pivx/res/img/bg-welcome.png
+    src/qt/pivx/res/img/ic-coin-piv.svg
+    src/qt/pivx/res/img/img-empty-dark-multisend.svg
+    src/qt/pivx/res/img/img-empty-dark-staking-on.svg
+    src/qt/pivx/res/img/img-empty-dark-transactions.svg
+    src/qt/pivx/res/img/img-empty-multisend.svg
+    src/qt/pivx/res/img/img-empty-staking-on.svg
+    src/qt/pivx/res/img/img-empty-transactions.svg
+    src/qt/pivx/res/img/img-logo-pivx.png
+    src/qt/pivx/res/img/img-nav-logo.png
+    src/qt/pivx/res/img/img-welcome-step2.png
+    src/qt/res/icons/bitcoin.ico
+    src/qt/res/icons/bitcoin.png
+    src/qt/res/icons/bitcoin_regtest.ico
+    src/qt/res/icons/bitcoin_regtest.png
+    src/qt/res/icons/bitcoin_testnet.ico
+    src/qt/res/icons/bitcoin_testnet.png
+    src/qt/res/images/about.png
+
+[33mcommit 3d4cf6a51426255292559be084a47f1fdbeeaf87[m
+Author: pedro-at-decenomy <pedro@decenomy.net>
+Date:   Sat Jun 5 21:17:41 2021 +0100
+
+    minor fix
+
+[33mcommit e30f88949580f4a1a5420e12757844037915f235[m
+Author: pedro-at-decenomy <pedro@deceno

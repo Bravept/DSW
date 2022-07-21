@@ -3,6 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
 // Copyright (c) 2021-2022 The DECENOMY Core Developers
+// Copyright (c) 2022 The Question IV developer
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -52,8 +53,8 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Sometimes you hit the jackpot and sometimes the jackpot hits you";
-    const CScript genesisOutputScript = CScript() << ParseHex("0478505c5bc438e08c0c8de26a661bc5a4453378d0b149fbf17cb3e1499b1d3e552fe5faaa253673c5349b461bd964a2ee860c114e9d2b9fdb0328f37ed356ed54") << OP_CHECKSIG;
+    const char* pszTimestamp = "If you eat an apple for 50 years, you get to live half a century!";
+    const CScript genesisOutputScript = CScript() << ParseHex("0469505c5bc438e08c0c8de26a661bc5a4453378d0b149fbf17cb3e1499b1d3e552fe5faaa253673c5349b461bd964a2ee860c114e9d2b9fdb0328f37ed356ed54") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -216,17 +217,17 @@ public:
         pchMessageStart[1] = 0x7b;
         pchMessageStart[2] = 0x86;
         pchMessageStart[3] = 0x77;
-        nDefaultPort = __PORT_MAINNET__;
+        nDefaultPort = 6900;
 
-        vSeeds.push_back(CDNSSeedData("seeder", "seeder.__decenomy.net__"));
-	    vSeeds.push_back(CDNSSeedData("seed1", "seed1.__decenomy.net__"));
-        vSeeds.push_back(CDNSSeedData("seed2", "seed2.__decenomy.net__"));
-        vSeeds.push_back(CDNSSeedData("seed3", "seed3.__decenomy.net__"));
-        vSeeds.push_back(CDNSSeedData("seed4", "seed4.__decenomy.net__"));
-	    vSeeds.push_back(CDNSSeedData("seed5", "seed5.__decenomy.net__"));
-	    vSeeds.push_back(CDNSSeedData("seed6", "seed6.__decenomy.net__"));
-	    vSeeds.push_back(CDNSSeedData("seed7", "seed7.__decenomy.net__"));
-	    vSeeds.push_back(CDNSSeedData("seed8", "seed8.__decenomy.net__"));
+        vSeeds.push_back(CDNSSeedData("seeder", "seeder.QuestionIV.net"));
+	    vSeeds.push_back(CDNSSeedData("seed1", "seed1.QuestionIV.net__"));
+        vSeeds.push_back(CDNSSeedData("seed2", "seed2.QuestionIV.net__"));
+        vSeeds.push_back(CDNSSeedData("seed3", "seed3.QuestionIV.net__"));
+        vSeeds.push_back(CDNSSeedData("seed4", "seed4.QuestionIV.net__"));
+	    vSeeds.push_back(CDNSSeedData("seed5", "seed5.QuestionIV.net__"));
+	    vSeeds.push_back(CDNSSeedData("seed6", "seed6.QuestionIV.net__"));
+	    vSeeds.push_back(CDNSSeedData("seed7", "seed7.QuestionIV.net__"));
+	    vSeeds.push_back(CDNSSeedData("seed8", "seed8.QuestionIV.net__"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 15); // 7
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16); // 7
@@ -259,13 +260,13 @@ public:
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
 
-        genesis = CreateGenesisBlock(1454124731, 2402015, 0x1e0ffff0, 1, 250 * COIN);
+        genesis = CreateGenesisBlock(1658369524, 2402015, 0x1e0ffff0, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        //assert(consensus.hashGenesisBlock == uint256S("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
-        //assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        //assert(consensus.hashGenesisBlock == uint256S("0xfeafec1fe36f853c464db206bb4d40d0431cbe3a64461caec6e85768d82f7ddc")); <- Alterei isto QuestionIV
+        //assert(genesis.hashMerkleRoot == uint256S("0x6dde83b348f53361ee0b6e46a6fb689f77c82ecfe2636db6c05c2a84139f23f4")); <-- ALterei isto QuestionIV
 
         consensus.fPowAllowMinDifficultyBlocks = true;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;   // __decenomy__ starting difficulty is 1 / 2^12
+        consensus.powLimit   = ~UINT256_ZERO >> 20;   // QuestionIV__ starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nCoinbaseMaturity = 15;
@@ -316,21 +317,21 @@ public:
         pchMessageStart[1] = 0x76;
         pchMessageStart[2] = 0x65;
         pchMessageStart[3] = 0xba;
-        nDefaultPort = __PORT_TESTNET__;
+        nDefaultPort = 6900;
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("tseeder", "tseeder.__decenomy.net__", true));
+        vSeeds.push_back(CDNSSeedData("tseeder", "tseeder.QuestionIV.net__", true));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet __decenomy__ addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet __decenomy__ script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 120); // Testnet QuestionIV__ addresses start with 'q'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet QuestionIV__ script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet __decenomy__ BIP32 pubkeys start with 'DRKV'
+        // Testnet QuestionIV__ BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet __decenomy__ BIP32 prvkeys start with 'DRKP'
+        // Testnet QuestionIV__ BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet __decenomy__ BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet QuestionIV__ BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
@@ -354,13 +355,14 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
 
-        genesis = CreateGenesisBlock(1454124731, 2402015, 0x1e0ffff0, 1, 250 * COIN);
+        genesis = CreateGenesisBlock(1658369524, 617185, 0x1e0ffff0, 1, 100 * COIN); // updated QuestionIV
         consensus.hashGenesisBlock = genesis.GetHash();
-        //assert(consensus.hashGenesisBlock == uint256S("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
-        //assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        //assert(consensus.hashGenesisBlock == uint256S("0x4798fcf274d1c52be8b2df96b536581341d7c8b6e98bc245f753f5f1eb2c6f7d")); <- question IV
+    
+        //assert(genesis.hashMerkleRoot == uint256S("0x6dde83b348f53361ee0b6e46a6fb689f77c82ecfe2636db6c05c2a84139f23f4"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;   // __decenomy__ starting difficulty is 1 / 2^12
+        consensus.powLimit   = ~UINT256_ZERO >> 20;   // QuestionIV__ starting difficulty is 1 / 2^12
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nCoinbaseMaturity = 100;
@@ -409,7 +411,7 @@ public:
         pchMessageStart[1] = 0xcf;
         pchMessageStart[2] = 0x7e;
         pchMessageStart[3] = 0xac;
-        nDefaultPort = __PORT_REGTEST__;
+        nDefaultPort = 6990;
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.

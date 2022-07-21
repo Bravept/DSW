@@ -1,0 +1,35 @@
+
+Genesis Block Input Parameters
+			
+Timestamp Message   : If you eat an apple for 50 years, you get to live half a century!
+Timestamp           : 1658369524 
+Block Rewards       : 1000
+PUB Secretkey       : 0469505c5bc438e08c0c8de26a661bc5a4453378d0b149fbf17cb3e1499b1d3e552fe5faaa253673c5349b461bd964a2ee860c114e9d2b9fdb0328f37ed356ed54
+    
+    
+    
+------------------------------Main Net--------------------------------------------------------
+  
+Time Stamp	    : 1658369524
+Bits			: 0x1e0ffff0
+Nonce			: 2001622356
+Merkle  Hash	: 0x6dde83b348f53361ee0b6e46a6fb689f77c82ecfe2636db6c05c2a84139f23f4
+Genesis Hash	: 0xfeafec1fe36f853c464db206bb4d40d0431cbe3a64461caec6e85768d82f7ddc 
+  
+     
+------------------------------Test Net--------------------------------------------------------
+     
+Time Stamp	   : 1658369524
+Bits			: 0x1e0ffff0
+Nonce			: 617185
+Merkle  Hash	: 0x6dde83b348f53361ee0b6e46a6fb689f77c82ecfe2636db6c05c2a84139f23f4
+Genesis Hash	: 0x4798fcf274d1c52be8b2df96b536581341d7c8b6e98bc245f753f5f1eb2c6f7d 
+     
+     
+------------------------------Regression Test Net--------------------------------------------------------
+     
+Time Stamp	   : 1658369524
+Bits			: 0x207fffff
+Nonce			: 1
+Merkle  Hash	: 0x6dde83b348f53361ee0b6e46a6fb689f77c82ecfe2636db6c05c2a84139f23f4
+Genesis Hash	: 0xf092ecf0b345b6c5e9cfe693ddf10b2995f84ebb3be3adb793159ec26685327f 
